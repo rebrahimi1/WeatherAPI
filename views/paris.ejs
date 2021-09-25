@@ -5,16 +5,28 @@
     <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="-/media/Themes/WellStar/Org/WellStarOrg/WellStarTheme/images/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Weather App</title>
 </head>
-<body style="background-color: rgb(233, 212, 183);">
+<body>
     <form action="/paris" method="post">
-
-        <div class="container">
-            <input type="text" name="cityName" id="box" placeholder="Search anything..." class="search__box">
-            <button type="submit"><i class="fas fa-search search__icon" id="icon" onclick="toggleShow()"></i></button>
-        </div>
-
+        <div class="wrapper">
+            <div class="navbar">
+              <div class="menu">
+                <ul>
+                  <li>Weather API</li>
+                </ul>
+              </div>
+              <div class="searchbar">
+                <input type="text" name="cityName" placeholder="Search for a city">
+                <div class="icon">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
     </form>
    
     <br>
@@ -49,13 +61,17 @@
     </div>
 
 
+    <div class="footer-basic">
+            
+        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+  
+        <p class="copyright">
+            Copyright © 2021
+            OpenWeather. All Rights Reserved.<br />
+  <br />
+  Wellstar does not discriminate on, exclude people or treat them differently on the basis of race, color, national origin, age, disability, sex, gender identity or expression or any other type of discrimination prohibited by law.
     
-    <script>
-        function toggleShow () {
-            var el = document.getElementById("box");
-            el.classList.toggle("show");
-          }
-    </script>
+  </div>
 
 
 
