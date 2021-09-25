@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+.css-input {
+    padding: 7px;
+    font-size: 30px;
+    border-width: 7px;
+    border-color: #e02323;
+    background-color: #064c68;
+    color: #ffffff;
+    border-style: double;
+    border-radius: 25px;
+    box-shadow: 1px 0px 8px rgba(66,66,66,.79);
+    text-shadow: -50px 0px 13px rgba(255,236,236,.75);
+}
+.css-input:focus {
+    outline:none;
+}
+   
+   
+   @media only screen and (min-width : 150px) and (max-width : 780px)
+   {
+       .css-input
+       {
+           width: 95%;
+           margin: 0 auto;
+       }
+   
+   }
+
+i {
+    font-size: 12.5rem;
+}
+
+.container {
+    width: 350px;
+    height: auto;
+    background-color: #1e272e;
+  /*   margin: 20vh auto; */
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4rem;
+    padding: 10px;
+  }
+  
+  .search__box {
+    float: left;
+    width: 0;
+    height: 4rem;
+  /*   display: inline; */
+    background: none;
+    color: #f7f7f7;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    position: relative;
+    opacity: 1;
+    transition: all .75s ease-in;
+    cursor: pointer;
+  /*   border: 2px solid tomato; */
+  /*   margin-top: 5px; */
+  }
+  
+  /* .search__box:focus, .search__box:hover {
+    background-color: #f1f2f6;
+  } */
+  
+  .search__icon {
+    box-sizing: border-box;
+    font-size: 2.5rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: .8rem;
+    margin-top: 0;
+    cursor: pointer;
+    position: absolute;
+    color: #fa983a;
+    transition: all .25s ease-in;
+    padding: .7rem;
+    border-radius: 50%;
+  }
+  
+  .container:hover > .search__box {
+    width: 85%;
+    padding: 0 1rem;
+  }
+  
+  .container:hover > .search__icon {
+    background-color: #eee;
+  }
+  
+  .show {
+    width: 85%;
+    border: 1px solid red;
+  }
+
+.content h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+    }
+
+    .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+    background-color: rgb(255, 255, 255);
+    }
+    .content{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius:10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: .4s;
+    height: 40%
+    }
+    .content:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    transform: translate(0px, -8px);
+    transition: .6s;
+    }
+
+
+    .buy-1{
+    background-color: #2183a2;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+    border:0px;
+    outline: none;
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-decoration: none;
+    }
+
+    hr.rounded {
+        border-top: 4px solid rgb(119, 36, 36);
+        border-radius: 5px;
+    }
+
+    @media(max-width: 1000px){
+    .content{
+    width: 46%;
+    }
+    }
+    @media(max-width: 750px){
+    .content{
+    width: 100%;
+    }
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+

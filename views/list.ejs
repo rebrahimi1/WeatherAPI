@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>Weather App</title>
+    <style>
+            body {
+                font-family:"Times New Roman", serif
+            }
+            h1,h2,h3,h4,h5,h6 {
+                font-family:serif; letter-spacing:5px
+            }
+    </style>
+</head>
+<body>
+
+    <form action="/paris" method="post">
+        <div class="wrapper">
+            <div class="navbar">
+              <div class="menu">
+                <ul>
+                  <li>Weather API</li>
+                </ul>
+              </div>
+              <div class="searchbar">
+                <input type="text" name="cityName" placeholder="Search for a city">
+                <div class="icon">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </form>
+
+    <br>
+    <br>
+    <div class="bdd">
+      <% weather_data.forEach(function(item) { %>
+        <div class="layout">
+          <div class="layout__item layout__item--body">
+            <h2><%= item.city %></h2>
+            <h2><%= item.description %></h2>
+            <h2><%= item.temperature %> F</h2>
+          </div>
+          <div class="layout__item layout__item--figure">
+            <% if (item.city === "London"){ %> 
+              <img src="image/lon.jpg" alt="Table">
+                  <% } %>
+                  <br>
+                  <br>
+                  <% if (item.city === "New York"){ %>
+                      <img src="image/ny.jpg" alt="Table">
+                  <% } %>
+                  <% if (item.city === "Paris"){ %>
+                      <img src="image/paris.jpg" alt="Table"> 
+                  <% } %>
+          </div>
+        </div>
+        <% }) %>
+    </div>
+
+    
+
+
+
+
+     
+</body>
+</html>
